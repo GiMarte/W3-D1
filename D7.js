@@ -53,9 +53,7 @@ console.log(sum(filteredArr));
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-const moreArr = (array, n) => {
-  return array.map((ele) => ele + n);
-};
+const moreArr = (array, n) => array.map((ele) => ele + n);
 
 console.log(moreArr(filteredArr, 5));
 console.log(moreArr(filteredArr, 4));
@@ -66,9 +64,7 @@ console.log(moreArr(filteredArr, 4));
 */
 const stringhe = ["ciao", "tizio", "broski", "italia bella"];
 
-const nStr = (str) => {
-  return str.map((ele) => ele.length);
-};
+const nStr = (str) => str.map((ele) => ele.length);
 
 console.log(nStr(stringhe));
 
@@ -245,12 +241,14 @@ console.log(only2000(movies));
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
-const yearSum = (arr) => arr.reduce((acc, film) => acc + parseInt(film.Year), 0);
+const yearSum = (arr) =>
+  arr.reduce((acc, film) => acc + parseInt(film.Year), 0);
 
 console.log(yearSum(movies));
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
